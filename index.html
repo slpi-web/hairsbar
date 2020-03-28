@@ -4,6 +4,7 @@
     <title>Hairs Bar</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device">
 </head>
@@ -28,13 +29,13 @@
                 </div>
             </header>
         </div>
-        <div class="contain flex-center">
+        <div id="menu" class="contain flex-center">
             <nav class="nav">
-                <a href="" class="nav-menu">О салоне</a>
-                <a href="" class="nav-menu">Наши цены</a>
-                <a href="" class="nav-menu">Преимущества</a>
-                <a href="" class="nav-menu">Наш Instagram</a>
-                <a href="" class="nav-menu">Контакты</a>
+                <a href="#about-us" class="nav-menu">О салоне</a>
+                <a href="#price" class="nav-menu">Наши цены</a>
+                <a href="#advantages" class="nav-menu">Преимущества</a>
+                <a href="#inst" class="nav-menu">Наш Instagram</a>
+                <a href="#contacts" class="nav-menu">Контакты</a>
             </nav>
         </div>
         <div class="contain flex-center flex-col  margin-botton">
@@ -88,7 +89,7 @@
 
     </div>
     <div class="contain flex-center">
-        <div class="flex-center flex-col">
+        <div id="about-us" class="flex-center flex-col">
             <h2 class="text-fon">
                 О студии HAIRS BAR
             </h2>
@@ -127,7 +128,7 @@
         </div>
     </div>
     <div class="flex-center contain flex-col">
-       <div class="h2-2"> <h2>
+       <div id="price" class="h2-2"> <h2>
             Наши цены
         </h2>
         </div>
@@ -487,26 +488,26 @@
     </div>
 
     <div class="contain flex-center flex-col">
-        <div class="h2-inst">
+        <div id="inst" class="h2-inst">
             <h2>
                 Подписывайтесь на наш <br> Instagram
             </h2>
         </div>
         <div class="flex-col inst-margin">
             <div class="flex-row">
-                <img class="pic-inst" src="img/inst1.png" alt="">
-                <img class="pic-inst" src="img/inst2.png" alt="">
-                <img class="pic-inst" src="img/inst3.png" alt="">
-                <img class="pic-inst" src="img/inst4.png" alt="">
+                <a data-fancybox="images" href="img/inst1.png"><img class="pic-inst" src="img/inst1.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst2.png"><img class="pic-inst" src="img/inst2.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst3.png"><img class="pic-inst" src="img/inst3.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst4.png"><img class="pic-inst" src="img/inst4.png" alt=""></a>
             </div> 
             <div class="flex-row">
-                <img class="pic-inst" src="img/inst5.png" alt="">
-                <img class="pic-inst" src="img/inst6.png" alt="">
-                <img class="pic-inst" src="img/inst7.png" alt="">
-                <img class="pic-inst" src="img/inst8.png" alt="">
+                <a data-fancybox="images" href="img/inst5.png"><img class="pic-inst" src="img/inst5.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst6.png"><img class="pic-inst" src="img/inst6.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst7.png"><img class="pic-inst" src="img/inst7.png" alt=""></a>
+                <a data-fancybox="images" href="img/inst8.png"><img class="pic-inst" src="img/inst8.png" alt=""></a>
             </div>
         </div>
-        <div class="advantages">
+        <div id="advantages" class="advantages">
             <h2>
                 Преимущества нашей работы
             </h2>
@@ -534,7 +535,7 @@
         </div>
        
 
-            <div class="contain contact-map">
+            <div id="contacts" class="contain contact-map">
                 <div class="footer-end">
                  <h2 class="h2-footer">
                      Контакты
@@ -559,11 +560,23 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
-
-
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
 
 
 </body>

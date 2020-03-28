@@ -799,3 +799,19 @@ li span{
 }
 
 
+.form-group::-webkit-input-placeholder {color:#000000;}
+::-moz-placeholder          {columns: #000000;;}/* Firefox 19+ */
+:-moz-placeholder           {columns: #000000;;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+.form-textarea::-webkit-input-placeholder {color:#000000;}
+::-moz-placeholder          {columns: #000000;;}/* Firefox 19+ */
+:-moz-placeholder           {columns: #000000;;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
