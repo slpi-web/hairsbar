@@ -761,7 +761,7 @@ li span{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: flex-start;
+    
     background:rgba(0, 0, 0, 0.9);
 
     position: absolute;
@@ -777,6 +777,7 @@ li span{
 .contact-map{
     display: flex;
     justify-content: flex-end;
+    align-self: center;
 }
 
 @media (max-width: 1200px){
