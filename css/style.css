@@ -538,8 +538,8 @@ body{
     margin-top: 40px ;
 }
 .form{
-    width: 388px;
-    height: 373px;
+    max-width: 388px;
+    max-height: 373px;
     background: #000000;
     border: 1px solid #E9CA77;
     border-radius: 15px;
@@ -556,14 +556,14 @@ body{
     border-radius: 5px;
     font-size: 14px;
     padding: 7px 12px;
-    width: 300px;
+    max-width: 300px;
     margin-bottom: px;
     font-family: Cambria;
     
 }
 .form-textarea{
-    height: 80px;
-    width: 300px;
+    max-height: 80px;
+    max-width: 300px;
     background: #FFFFFF;
     border: 2px solid #E9CA77;
     border-radius: 5px;
@@ -614,8 +614,8 @@ body{
 .block-1{
     background: rgba(233, 202, 119, 0.58);
    
-    width: 368.96px;
-    height: 252.81px;
+    max-width: 368.96px;
+    max-height: 252.81px;
     z-index: 5;
     padding: 60px 25px;
     
@@ -626,8 +626,8 @@ body{
 .block-2{
     background: #E9CA77;
     transform: rotate(-18.37deg);
-    width: 368.96px;
-    height: 252.81px;
+    max-width: 368.96px;
+    max-height: 252.81px;
     z-index: 3;
     padding: 36px 25px;
     margin-left: 30px;
@@ -691,7 +691,7 @@ td{
     padding-bottom: 5px;
 }
 .td{
-    width: 172px;
+    max-width: 172px;
 }
 
 .td-1{
@@ -710,8 +710,8 @@ td{
     padding: 30px 220px;
 }
 .pic-inst{
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
     padding: 5px;
     
 }
@@ -767,8 +767,8 @@ li span{
     position: absolute;
     z-index: 0;
     top: 0;
-    width: 516px;
-    height: 450px;
+    max-width: 516px;
+    max-height: 450px;
     padding-left: 100px;
     
 
